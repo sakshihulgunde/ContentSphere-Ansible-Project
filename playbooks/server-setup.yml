@@ -1,0 +1,8 @@
+---
+- name: Deploy ContentSphere Web Application
+  hosts: webserver
+  become: true
+  gather_facts: true
+
+  roles:
+    - webserver

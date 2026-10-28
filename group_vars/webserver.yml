@@ -1,0 +1,6 @@
+---
+app_name: "ContentSphere"
+app_directory: "/var/www/contentsphere"
+web_port: 80
+webserver_package: nginx
+webserver_service: nginx

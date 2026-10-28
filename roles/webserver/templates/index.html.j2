@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ app_name }}</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 28px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .status {
+            color: #15803d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ app_name }}</h1>
+        <p>Infrastructure Automation with Ansible</p>
+    </header>
+    <main>
+        <h2>Welcome to {{ app_name }}</h2>
+        <p>Your application server has been configured using Ansible.</p>
+        <p class="status">Web Server Status: Running</p>
+        <p>HTTP Port: {{ web_port }}</p>
+        <p>Deployment Directory: {{ app_directory }}</p>
+    </main>
+</body>
+</html>

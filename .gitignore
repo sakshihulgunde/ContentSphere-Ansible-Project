@@ -1,0 +1,24 @@
+# SSH keys and credentials
+*.pem
+*.key
+*_rsa
+*_ed25519
+.env
+.env.*
+!.env.example
+
+# Ansible temporary files
+*.retry
+*.log
+__pycache__/
+*.pyc
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated private files
+secrets/
+vault-password*
